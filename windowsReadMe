@@ -1,0 +1,93 @@
+
+
+************************************************************************************************
+***
+***
+***   NOTE: Please read this to get started (also contains user password information)
+***
+***
+************************************************************************************************
+
+
+
+FIRST STEP >> Change Your Windows Hosts File
+
+
+	1) On the Windows Taskbar click on the Notepad ++ icon...the Windows Hosts file will be open
+	2) Change the HXE IP address from 10.xxx to the IP address of your HANA Express system
+	
+	3) If you are using ADP change 10.xxx to the ADP system IP that you were assigned by the HANA Academy
+	4) If you are using Vora change 10.xxx to the Vora IP that you were assigned by the HANA Academy
+
+	5) Save the hosts file and see below for any passwords and additional instructions
+
+
+SECOND STEP >> Open Links to Application Files
+	
+	1) See the bookmarks and folders on the Chrome Bookmarks bar
+	2) Note that each workflow will have its own folder and specific urls to further documentation or code
+	3) See below for any passwords and additional instructions for each application
+
+
+
+
+
+
+
+
+
+
+PASSWORDS >>
+
+
+*****************************
+* HXE : HANA Express 2.0 SPS02
+*****************************
+
+site			user		password
+----			----		--------
+XSA Admin		XSA_ADMIN	SHALive1
+Web IDE			XSA_DEV		SHALive1
+System DB		SYSTEM		SHALive1
+Tenant (HXE)		SYSTEM		SHALive1
+os			hxeadm		SHALive1
+
+
+****************************
+* ADP
+****************************
+
+site			user		password
+----			----		--------
+ADP Login		???		SHALive1
+			(user ID from HANA Academy)
+
+
+****************************
+* Vora
+****************************
+
+site			user		password
+----			----		--------
+Ambari			admin		SHALive1
+
+
+****************************
+* HANA 1
+****************************
+			
+version			user		password
+-------			----		--------
+HANA 1			SYSTEM		SHALive1
+HANA 1			HDBADM		SHALive1
+
+
+****************************
+* S/4HANA
+****************************
+
+application		user		password
+-----------		----		--------
+Eclipse			???		SHALive1
+  (open ABAP Perspective in Eclipse)	  
+  (user ??? assigned by HANA Academy)

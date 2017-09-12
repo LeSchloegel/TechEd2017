@@ -1,1 +1,20 @@
+We have 1 demo / workflow for S4 and it is extending S/4HANA with External Data. You will combine data from a Hadoop system to data in an S4 system via CDS. 
 
+The workflow to connect to add data to S/4HANA is normally:
+
+1)	Add a Smart Data Access connection in HANA
+2)	Add a Virtual Table, from the Remote Data Source, in HANA
+3)	Create a Calculation View off of the HANA Virtual Table
+4)	Add an External View to the ABAP Data Dictionary (ABAP DDIC)
+5)	Create a CDS view off of the External View
+6)	Extend an existing CDS consumption view.
+
+In this particular demo there have been some steps above that are already done. We’ve already done steps 1 to 3. We have also created a couple of CDS views, one of which is extended by you in step 6.
+
+This script was written for use on S/4HANA 1610 FPS00 or FPS01 On-Premise Edition. 
+
+
+Steps for you:
+1) You need to obtain a Windows System & User ID, plus an S4 User ID from the HANA Academy to follow this workflow.
+2) In the S/4HANA folder in Chrome, open the "Extending S4..." link in a new window to get the current script
+3) Feel free to ask the HANA Academy any questions should they arise

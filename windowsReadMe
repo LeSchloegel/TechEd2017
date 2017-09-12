@@ -86,6 +86,8 @@ HANA 1			HDBADM		SHALive1
 * S/4HANA
 ****************************
 
+See the S/4HANA Instructions file in the S/4HANA folder in Chrome.
+
 application		user		password
 -----------		----		--------
 Eclipse			???		SHALive1

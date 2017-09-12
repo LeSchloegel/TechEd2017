@@ -17,5 +17,5 @@ This script was written for use on S/4HANA 1610 FPS00 or FPS01 On-Premise Editio
 Steps for you:
 1) You need to obtain an S4 User ID from the HANA Academy to follow this workflow.
 2) In the S/4HANA folder in Chrome, open the "Extending S4..." link in a new window to get the current script so that you can download it to your machine.
-3) Open up Eclipse and then follow the instructions in the "Extending S4..." pdf / script...your user password will be SHALive1
+3) Open up Eclipse and then follow the instructions in the "Extending S4..." pdf / script.
 4) Feel free to ask the HANA Academy any questions should they arise.

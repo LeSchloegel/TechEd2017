@@ -1,4 +1,4 @@
-We have 1 demo / workflow for S4 and it is extending S/4HANA with External Data. You will combine data from a Hadoop system to data in an S4 system via CDS. 
+We have 1 demo / workflow for S4 for Tech Ed and it is Extending S/4HANA with External Data. You will combine data from a Hadoop system to data in an S4 system via CDS. 
 
 The workflow to connect to add data to S/4HANA is normally:
 

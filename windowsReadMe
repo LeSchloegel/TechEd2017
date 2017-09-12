@@ -87,9 +87,3 @@ HANA 1			HDBADM		SHALive1
 ****************************
 
 See the S/4HANA Instructions file in the S/4HANA folder in Chrome.
-
-application		user		password
------------		----		--------
-Eclipse			???		SHALive1
-  (open ABAP Perspective in Eclipse)	  
-  (user ??? assigned by HANA Academy)

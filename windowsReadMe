@@ -1,0 +1,29 @@
+
+
+**************************************************
+***
+***
+***   NOTE: Please read this to get started
+***
+***
+**************************************************
+
+
+
+FIRST STEP >> Change Your Windows Hosts File
+
+
+	1) On the Windows Taskbar click on the Notepad ++ icon...the Windows Hosts file will be open
+	2) Change the HXE IP address from 10.xxx to the IP address of your HANA Express system
+	
+	3) If you are using ADP change 10.xxx to the ADP system IP that you were assigned by the HANA Academy
+	4) If you are using Vora change 10.xxx to the Vora IP that you were assigned by the HANA Academy
+
+	5) Save the hosts file and see below for any passwords and additional instructions
+
+
+SECOND STEP >> Open Links to Application Files
+	
+	1) Note the bookmarks and folders on the Chrome Bookmarks bar
+	2) Note that each workflow will have its own folder and specific urls to further documentation or code
+	3) See the User Info link in Chrome for any users, passwords, and additional instructions for each application

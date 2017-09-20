@@ -3,10 +3,10 @@ create table FACTS (TEAMID int, LEAGUEYEAR string, YEARDECADE string)
 using com.sap.spark.engines.relational
 options 
 (
-files "/shabob/footy_facts.csv",
+files "/shabobbucket/footy_facts.csv",
 storagebackend "s3",
-s3accesskeyid "AKIAJMVNNAK53XFPG4JA",
-s3secretaccesskey "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",
+s3accesskeyid "AKIAJV6D63AACUMRB3MA",
+s3secretaccesskey "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",
 s3endpoint "https://s3.us-east-2.amazonaws.com"
 );
 
@@ -17,14 +17,15 @@ create table DIMS (TEAMID int, TEAM string)
 using com.sap.spark.engines.relational
 options 
 (
-files "/shabob/footy_dims.csv",
+files "/shabobbucket/footy_dims.csv",
 storagebackend "s3",
-s3accesskeyid "AKIAJMVNNAK53XFPG4JA",
-s3secretaccesskey "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",
+s3accesskeyid "AKIAJV6D63AACUMRB3MA",
+s3secretaccesskey "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",
 s3endpoint "https://s3.us-east-2.amazonaws.com"
 );
 
 select * from dims order by team;
+
 
 -- run in hana as shauser
 http://52.9.252.190:8000/sap/hana/xs/ide

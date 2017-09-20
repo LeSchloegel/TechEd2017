@@ -27,6 +27,8 @@ s3endpoint "https://s3.us-east-2.amazonaws.com"
 select * from dims order by team;
 
 -- run in hana as devuser
+http://52.9.252.190:8000/sap/hana/xs/ide
+devuser/********
 select * from league_schema.latest_facts;
 
 show tables
@@ -37,7 +39,7 @@ host "52.9.252.190",
 instance "00",
 port "15",
 user "shauser",
-passwd "SHALive1",
+passwd "*******",
 dbschema "LEAGUE_SCHEMA"
 );
 

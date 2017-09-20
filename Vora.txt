@@ -27,18 +27,7 @@ s3endpoint "https://s3.us-east-2.amazonaws.com"
 select * from dims order by team;
 
 -- run in hana as devuser
-drop schema league_schema cascade;
-create schema league_schema;
-create table league_schema.LATEST_FACTS
-(TEAMID integer, LEAGUEYEAR varchar(4));
-insert into league_schema.latest_facts values (5,'2017');
-
 select * from league_schema.latest_facts;
-
--- to be run on new box if needed
-DROP USER SHAUSER CASCADE;
-CREATE USER SHAUSER PASSWORD SHALive1;
-GRANT SELECT ON SCHEMA LEAGUE_SCHEMA to SHAUSER;
 
 show tables
 using com.sap.spark.hana

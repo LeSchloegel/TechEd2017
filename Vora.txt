@@ -26,9 +26,9 @@ s3endpoint "https://s3.us-east-2.amazonaws.com"
 
 select * from dims order by team;
 
--- run in hana as devuser
+-- run in hana as shauser
 http://52.9.252.190:8000/sap/hana/xs/ide
-devuser/********
+shauser/********
 select * from league_schema.latest_facts;
 
 show tables

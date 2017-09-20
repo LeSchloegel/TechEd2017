@@ -1,0 +1,66 @@
+drop table if exists FACTS;
+create table FACTS (TEAMID int, LEAGUEYEAR string, YEARDECADE string)
+using com.sap.spark.engines.relational
+options 
+(
+files "/shabob/footy_facts.csv",
+storagebackend "s3",
+s3accesskeyid "AKIAJMVNNAK53XFPG4JA",
+s3secretaccesskey "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",
+s3endpoint "https://s3.us-east-2.amazonaws.com"
+);
+
+select * from facts order by leagueyear;
+
+drop table if exists DIMS;
+create table DIMS (TEAMID int, TEAM string)
+using com.sap.spark.engines.relational
+options 
+(
+files "/shabob/footy_dims.csv",
+storagebackend "s3",
+s3accesskeyid "AKIAJMVNNAK53XFPG4JA",
+s3secretaccesskey "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",
+s3endpoint "https://s3.us-east-2.amazonaws.com"
+);
+
+select * from dims order by team;
+
+-- run in hana as devuser
+drop schema league_schema cascade;
+create schema league_schema;
+create table league_schema.LATEST_FACTS
+(TEAMID integer, LEAGUEYEAR varchar(4));
+insert into league_schema.latest_facts values (5,'2017');
+
+select * from league_schema.latest_facts;
+
+-- to be run on new box if needed
+DROP USER SHAUSER CASCADE;
+CREATE USER SHAUSER PASSWORD SHALive1;
+GRANT SELECT ON SCHEMA LEAGUE_SCHEMA to SHAUSER;
+
+show tables
+using com.sap.spark.hana
+options 
+(
+host "52.9.252.190",
+instance "00",
+port "15",
+user "shauser",
+passwd "SHALive1",
+dbschema "LEAGUE_SCHEMA"
+);
+
+register all tables ...
+()
+ignoring conflicts;
+
+show tables; 
+
+-- show counts in each select
+select TEAMID, LEAGUEYEAR from latest_facts
+union
+select TEAMID, LEAGUEYEAR from facts;
+
+select * from LEAGUEWINNERS order by TROPHY_COUNT desc;

@@ -10,17 +10,14 @@
 
 -----------------------------------------------------
 --
---  create schema & drop certain tables if they exist
+--  drop certain tables if they exist
 --
 -----------------------------------------------------
-
-CREATE SCHEMA SPATIAL_DEMO;
 
 DROP TABLE SPATIAL_DEMO.CENSUS_GEO;
 DROP TABLE SPATIAL_DEMO.CENSUS_BINARY;
 DROP TABLE SPATIAL_DEMO.GEOTYPES;
 DROP TABLE SPATIAL_DEMO.GEOMULTIDIM;
-
 
 -----------------------------------------------------
 --

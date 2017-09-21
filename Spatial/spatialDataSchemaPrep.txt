@@ -1,0 +1,43 @@
+---------------------------------
+--                             --
+--                             --
+--  Spatial Data Creation      --
+--                             --
+--                             --
+---------------------------------
+
+-- ensure that you have already run the data Import as per the Spatial Self Guided Demo guide
+
+-----------------------------------------------------
+--
+--  create schema & drop certain tables if they exist
+--
+-----------------------------------------------------
+
+CREATE SCHEMA SPATIAL_DEMO;
+
+DROP TABLE SPATIAL_DEMO.CENSUS_GEO;
+DROP TABLE SPATIAL_DEMO.CENSUS_BINARY;
+DROP TABLE SPATIAL_DEMO.GEOTYPES;
+DROP TABLE SPATIAL_DEMO.GEOMULTIDIM;
+
+
+-----------------------------------------------------
+--
+--  create table with a binary column of point data
+--
+-----------------------------------------------------
+
+CREATE COLUMN TABLE SPATIAL_DEMO.CENSUS_BINARY (
+	"ROWID" INTEGER CS_INT,
+	NAME VARCHAR(100),
+	LONLAT_BINARY BLOB MEMORY THRESHOLD 1000
+) UNLOAD PRIORITY 5 AUTO MERGE;
+
+INSERT INTO SPATIAL_DEMO.CENSUS_BINARY (
+	SELECT	TOP 10 "ROWID",
+		NAME, 	
+		NEW ST_POINT(COORDINATES_LON, COORDINATES_LAT).ST_AsBinary() 
+ 	FROM SPATIAL_DEMO.CENSUS
+ 	ORDER BY "ROWID" ASC
+);

@@ -370,5 +370,3 @@ FROM SPATIAL_DEMO.GEOMULTIDIM
 WHERE GEO.ST_GeometryType() = 'ST_Point' 
 	AND (GEO.ST_Is3D() = 1 
 	OR GEO.ST_IsMeasured() = 1);
-	
-	

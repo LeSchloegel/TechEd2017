@@ -8,22 +8,7 @@
 
 -- ensure that you have already run the data Import as per the Spatial Self Guided Demo guide
 
------------------------------------------------------
---
---  drop certain tables if they exist
---
------------------------------------------------------
-
-DROP TABLE SPATIAL_DEMO.CENSUS_GEO;
-DROP TABLE SPATIAL_DEMO.CENSUS_BINARY;
-DROP TABLE SPATIAL_DEMO.GEOTYPES;
-DROP TABLE SPATIAL_DEMO.GEOMULTIDIM;
-
------------------------------------------------------
---
---  create table with a binary column of point data
---
------------------------------------------------------
+-- the following create a table that contains lon lat info as a single binary field (to mimic a common AnyDB storage method)
 
 CREATE COLUMN TABLE SPATIAL_DEMO.CENSUS_BINARY (
 	"ROWID" INTEGER CS_INT,

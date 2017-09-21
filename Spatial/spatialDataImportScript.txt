@@ -1,5 +1,5 @@
 ###########################################################
-# To be ran using SSH so can get CSV files to HANA Server #
+# To be run using SSH so can get CSV files to HANA Server #
 ###########################################################
 
 sudo su

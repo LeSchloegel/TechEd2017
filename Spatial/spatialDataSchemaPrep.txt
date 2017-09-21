@@ -1,3 +1,4 @@
+
 ---------------------------------
 --                             --
 --                             --
@@ -23,3 +24,10 @@ INSERT INTO SPATIAL_DEMO.CENSUS_BINARY (
  	FROM SPATIAL_DEMO.CENSUS
  	ORDER BY "ROWID" ASC
 );
+
+
+-- the following statements should only be run if you want to clean out your system and repeat the demo again
+-- DROP TABLE SPATIAL_DEMO.CENSUS_GEO;
+-- DROP TABLE SPATIAL_DEMO.CENSUS_BINARY;
+-- DROP TABLE SPATIAL_DEMO.GEOTYPES;
+-- DROP TABLE SPATIAL_DEMO.GEOMULTIDIM;

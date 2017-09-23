@@ -1,0 +1,27 @@
+SAP HANA Academy - Data Stewardship - Hands-on TechEd 2017
+
+Data Source: 
+https://www.dropbox.com/s/ovfrk6iawxphaen/CustomerDataOverTime.xlsx?dl=0
+
+Address
+addressline of the SQD != null and locality of the SQD != null and region of the SQD != null and zipcode of the SQD != null and country of the SQD != null 
+
+Phone
+phone of the SQD != null
+
+Email
+email of the SQD != null
+
+FullName
+fname of the SQD != null and lname of the SQD != null
+
+customerid
+fname
+lname
+addressline
+locality	
+region	
+zipcode	
+country	
+email	
+phone

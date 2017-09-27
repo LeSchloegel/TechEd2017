@@ -5,8 +5,8 @@ options
 (
 files "/shabobbucket/footy_facts.csv",
 storagebackend "s3",
-s3accesskeyid "AKIAJV6D63AACUMRB3MA",
-s3secretaccesskey "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",
+s3accesskeyid "[[Email "hanaacademy@sap.com" for key]]",
+s3secretaccesskey "[[Email "hanaacademy@sap.com" for key]]",
 s3endpoint "https://s3.us-east-2.amazonaws.com"
 );
 
@@ -19,8 +19,8 @@ options
 (
 files "/shabobbucket/footy_dims.csv",
 storagebackend "s3",
-s3accesskeyid "AKIAJV6D63AACUMRB3MA",
-s3secretaccesskey "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",
+s3accesskeyid "[[Email "hanaacademy@sap.com" for key]]",
+s3secretaccesskey "[[Email "hanaacademy@sap.com" for key]]",
 s3endpoint "https://s3.us-east-2.amazonaws.com"
 );
 

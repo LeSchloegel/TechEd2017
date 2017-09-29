@@ -5,8 +5,8 @@ options
 (
 files "/shabobbucket/footy_facts.csv",
 storagebackend "s3",
-s3accesskeyid "[[Email "hanaacademy@sap.com" for key]]",
-s3secretaccesskey "[[Email "hanaacademy@sap.com" for key]]",
+s3accesskeyid "",
+s3secretaccesskey "",
 s3endpoint "https://s3.us-east-2.amazonaws.com"
 );
 
@@ -19,13 +19,12 @@ options
 (
 files "/shabobbucket/footy_dims.csv",
 storagebackend "s3",
-s3accesskeyid "[[Email "hanaacademy@sap.com" for key]]",
-s3secretaccesskey "[[Email "hanaacademy@sap.com" for key]]",
+s3accesskeyid "",
+s3secretaccesskey "",
 s3endpoint "https://s3.us-east-2.amazonaws.com"
 );
 
 select * from dims order by team;
-
 
 -- run in hana as shauser
 http://52.9.252.190:8000/sap/hana/xs/ide

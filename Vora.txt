@@ -5,8 +5,8 @@ options
 (
 files "/shabobbucket/footy_facts.csv",
 storagebackend "s3",
-s3accesskeyid "",
-s3secretaccesskey "",
+s3accesskeyid "[ASK SAP HANA ACADEMY FOR INFO]",
+s3secretaccesskey "[ASK SAP HANA ACADEMY FOR INFO]",
 s3endpoint "https://s3.us-east-2.amazonaws.com"
 );
 
@@ -19,8 +19,8 @@ options
 (
 files "/shabobbucket/footy_dims.csv",
 storagebackend "s3",
-s3accesskeyid "",
-s3secretaccesskey "",
+s3accesskeyid "[ASK SAP HANA ACADEMY FOR INFO]",
+s3secretaccesskey "[ASK SAP HANA ACADEMY FOR INFO]",
 s3endpoint "https://s3.us-east-2.amazonaws.com"
 );
 
